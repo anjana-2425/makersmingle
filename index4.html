@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makermingle.com</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+            header {
+      background: linear-gradient(45deg, #ff6600, #d41515);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav button {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    nav button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to MakersMingle!</h1>
+        <p>Artists Room</p>
+        <nav>
+            <button onclick="redirectTo('file:///C:/makersmingle/index2.html')">Home</button>
+            <button onclick="redirectTo('file:///C:/makersmingle/index8.html')">Contact Us</button>
+            <button onclick="redirectTo('file:///C:/makersmingle/index3.html')">About</button>
+        </nav>
+      </header>
+    <div class="container">
+        <main class="chat-container">
+            <section class="chat-box">
+                <div class="messages" id="messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="message-input">
+                    <input type="text" id="message-input" placeholder="Type your message..." />
+                    <button id="send-button">Send</button>
+                </div>
+            </section>
+            <aside class="blog-section">
+                <h2>Other Rooms</h2>
+                <div class="blog-post">
+                    <h3>General</h3>
+                    <p>General room for all peoples.Where people can discuss their hobbies,intrests.etc</p>
+                    <a href="C:/makersmingle/index.html">Click Here</a>
+                </div>
+            </aside>
+        </main>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        function redirectTo(filePath) {
+          window.location.href = filePath;
+        }
+      </script>
+</body>
+</html>

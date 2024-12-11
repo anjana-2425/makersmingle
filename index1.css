@@ -1,0 +1,65 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4c8cf5, #6a82fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login container styling */
+.login-container {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Form element styling */
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Submit button styling */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4c8cf5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #3578e5;
+}
+
+/* Additional link styling */
+.login-container a {
+    display: block;
+    margin-top: 15px;
+    color: #4c8cf5;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

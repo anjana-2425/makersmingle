@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MakerMingle.com</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    nav button {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .hero {
+      background-color: azure;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: medium;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: slideIn 1.5s ease-in-out;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .hero h2 {
+      color: white;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    footer {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to MakersMingle!</h1>
+    <p>Connect with like-minded individuals who share your passions!</p>
+    <nav>
+      <button onclick="redirectTo('file:///C:/makersmingle/index2.html')">Home</button>
+      <button onclick="redirectTo('file:///C:/makersmingle/index8.html')">Contact Us</button>
+      <button onclick="redirectTo('file:///C:/makersmingle/index3.html')">About</button>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <p>Welcome to MakersMingle, a vibrant online space designed for artists, hobbyists, gamers, and DIY makers to come together and share their passions. Whether you're sketching your next masterpiece, building an intricate DIY project, conquering virtual worlds in your favorite games, or exploring a unique hobby, this is the perfect place for you. Our platform fosters creativity and collaboration, providing chatrooms and forums where you can connect with like-minded individuals, exchange ideas, and find inspiration. From brainstorming sessions to sharing tips and showcasing your work, Creative Connect is a supportive community where creativity thrives, and connections are made.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 MakersMingle. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function redirectTo(filePath) {
+      window.location.href = filePath;
+    }
+  </script>
+</body>
+</html>
